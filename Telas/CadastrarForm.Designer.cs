@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.nome = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxNome = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxTelefone = new System.Windows.Forms.TextBox();
             this.telefone = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.senha = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxConfirmacaoSenha = new System.Windows.Forms.TextBox();
             this.confirmacaoSenha = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,21 +56,23 @@
             this.nome.TabIndex = 0;
             this.nome.Text = "Nome Completo";
             // 
-            // textBox1
+            // textBoxNome
             // 
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(133, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 25);
-            this.textBox1.TabIndex = 1;
+            this.textBoxNome.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNome.Location = new System.Drawing.Point(133, 91);
+            this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.Size = new System.Drawing.Size(219, 25);
+            this.textBoxNome.TabIndex = 1;
+            this.textBoxNome.TextChanged += new System.EventHandler(this.textBoxNome_TextChanged);
             // 
-            // textBox2
+            // textBoxEmail
             // 
-            this.textBox2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(133, 143);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 25);
-            this.textBox2.TabIndex = 3;
+            this.textBoxEmail.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmail.Location = new System.Drawing.Point(133, 143);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(219, 25);
+            this.textBoxEmail.TabIndex = 3;
+            this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
             // 
             // email
             // 
@@ -82,13 +84,14 @@
             this.email.TabIndex = 2;
             this.email.Text = "Email";
             // 
-            // textBox3
+            // textBoxTelefone
             // 
-            this.textBox3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(133, 194);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(219, 25);
-            this.textBox3.TabIndex = 5;
+            this.textBoxTelefone.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTelefone.Location = new System.Drawing.Point(133, 194);
+            this.textBoxTelefone.Name = "textBoxTelefone";
+            this.textBoxTelefone.Size = new System.Drawing.Size(219, 25);
+            this.textBoxTelefone.TabIndex = 5;
+            this.textBoxTelefone.TextChanged += new System.EventHandler(this.textBoxTelefone_TextChanged);
             // 
             // telefone
             // 
@@ -100,13 +103,14 @@
             this.telefone.TabIndex = 4;
             this.telefone.Text = "Telefone";
             // 
-            // textBox4
+            // textBoxSenha
             // 
-            this.textBox4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(133, 247);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(219, 25);
-            this.textBox4.TabIndex = 7;
+            this.textBoxSenha.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSenha.Location = new System.Drawing.Point(133, 247);
+            this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.Size = new System.Drawing.Size(219, 25);
+            this.textBoxSenha.TabIndex = 7;
+            this.textBoxSenha.TextChanged += new System.EventHandler(this.textBoxSenha_TextChanged);
             // 
             // senha
             // 
@@ -118,13 +122,14 @@
             this.senha.TabIndex = 6;
             this.senha.Text = "Senha";
             // 
-            // textBox5
+            // textBoxConfirmacaoSenha
             // 
-            this.textBox5.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(133, 299);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(219, 25);
-            this.textBox5.TabIndex = 9;
+            this.textBoxConfirmacaoSenha.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConfirmacaoSenha.Location = new System.Drawing.Point(133, 299);
+            this.textBoxConfirmacaoSenha.Name = "textBoxConfirmacaoSenha";
+            this.textBoxConfirmacaoSenha.Size = new System.Drawing.Size(219, 25);
+            this.textBoxConfirmacaoSenha.TabIndex = 9;
+            this.textBoxConfirmacaoSenha.TextChanged += new System.EventHandler(this.textBoxConfirmacaoSenha_TextChanged);
             // 
             // confirmacaoSenha
             // 
@@ -144,6 +149,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(48, 42);
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -184,15 +190,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBoxConfirmacaoSenha);
             this.Controls.Add(this.confirmacaoSenha);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxSenha);
             this.Controls.Add(this.senha);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxTelefone);
             this.Controls.Add(this.telefone);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.email);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.nome);
             this.Name = "CadastrarForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -207,14 +213,14 @@
         #endregion
 
         private System.Windows.Forms.Label nome;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxNome;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label email;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.Label telefone;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxSenha;
         private System.Windows.Forms.Label senha;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxConfirmacaoSenha;
         private System.Windows.Forms.Label confirmacaoSenha;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

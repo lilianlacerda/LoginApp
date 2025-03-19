@@ -24,7 +24,7 @@ namespace LoginApp.Telas
         }
         private void applicationClose(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            Application.ExitThread();
         }
     }
 }
