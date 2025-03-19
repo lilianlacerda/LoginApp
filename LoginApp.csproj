@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Telas\CadastrarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastrarForm.Designer.cs">
+      <DependentUpon>CadastrarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     <Compile Include="Telas\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\CadastrarForm.resx">
+      <DependentUpon>CadastrarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +106,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\9133514_signup_register_login_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7225798_arrow_return_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2849794_plane_paper airplane_send_airplane_multimedia_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,18 +10,21 @@ using System.Windows.Forms;
 
 namespace LoginApp.Telas
 {
-    public partial class MainForm : Form
+    public partial class CadastrarForm : Form
     {
-        public MainForm()
+        public CadastrarForm()
         {
             InitializeComponent();
             this.FormClosed += applicationClose;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
         }
+
         private void applicationClose(object sender, FormClosedEventArgs e)
         {
             Application.Exit();

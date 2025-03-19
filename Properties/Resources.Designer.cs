@@ -63,6 +63,16 @@ namespace LoginApp.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2849794_plane_paper_airplane_send_airplane_multimedia_icon {
+            get {
+                object obj = ResourceManager.GetObject("2849794_plane_paper airplane_send_airplane_multimedia_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _298868_sign_in_icon {
             get {
                 object obj = ResourceManager.GetObject("298868_sign_in_icon", resourceCulture);
@@ -76,6 +86,16 @@ namespace LoginApp.Properties {
         internal static System.Drawing.Bitmap _298868_sign_in_icon__1_ {
             get {
                 object obj = ResourceManager.GetObject("298868_sign_in_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7225798_arrow_return_icon {
+            get {
+                object obj = ResourceManager.GetObject("7225798_arrow_return_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

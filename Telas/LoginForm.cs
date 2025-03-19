@@ -36,6 +36,7 @@ namespace LoginApp
         private void validarAcesso()
         {
             if (!string.IsNullOrEmpty(textBoxLogin.Text) || !string.IsNullOrEmpty(textBoxSenha.Text)) {
+                this.Hide();
                 MainForm mainForm = new MainForm();
                 mainForm.Show();
             }
@@ -43,6 +44,13 @@ namespace LoginApp
             {
                 MessageBox.Show("Preencha todos os campos!!");
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CadastrarForm cadastrarForm = new CadastrarForm();
+            cadastrarForm.Show();
         }
     }
 }
