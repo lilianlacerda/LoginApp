@@ -15,7 +15,7 @@ namespace LoginApp.Telas
         public CadastrarForm()
         {
             InitializeComponent();
-            this.FormClosed += applicationClose;
+            this.FormClosing += applicationClose;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -25,9 +25,19 @@ namespace LoginApp.Telas
             loginForm.Show();
         }
 
-        private void applicationClose(object sender, FormClosedEventArgs e)
+        private void applicationClose(object sender, FormClosingEventArgs evento)
         {
-            Application.ExitThread();
+            DialogResult resposta = MessageBox.Show("Realmente deseja fechar a aplicação?", "Sair da aplicação", MessageBoxButtons.YesNo);
+            if (resposta == DialogResult.No)
+            {
+                evento.Cancel = true;
+
+            }
+            else
+            {
+                Application.ExitThread();
+            }
+
         }
 
         public void textBoxNome_TextChanged(object sender, EventArgs e)
